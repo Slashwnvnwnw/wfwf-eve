@@ -20,3 +20,31 @@ Redis 分布式锁 + W3 待办独立线程池异步处理**：质检状态变化
 	3. 分布式幂等设计：发送前锁内二次 `getCheckFlag` 查询业务侧是否仍有未完成任务，防"取锁瞬间业务已流转"导致误发；
 	4. 发送结果全程落 `t_quality_inspection_project_w3` 表（INIT → SUCCESS/FAIL），门户调用失败标 FAIL，后续任何状态变动的"双状态对齐"（业务侧活 vs 待办侧残留）自动补偿修复，实现最终一致。
 
+
+
+难点 3：Redis 分布式锁 + 独立线程池的 W3 待办异步处理
+
+### Situation（背景）
+
+质检任务派发/复核时，需要向 W3 待办中心（内部待办系统）发送/删除待办。问题：
+
+1. W3 接口响应不稳定，删除操作偶发超时，同步调用会阻塞质检主流程；
+2. 并发场景下同一待办可能被重复删除（派发与复核几乎同时触发），重复调用下游产生脏数据；
+3. 应用发布重启时，线程池中未完成的待办任务不能直接丢弃。
+
+### Task（任务）
+
+设计异步待办处理机制：发送/删除互不阻塞、删除操作幂等、应用停机时任务可优雅收尾。
+
+### Action（行动）
+
+1. **双线程池隔离**：`send_w3_todo` 与 `del_w3_todo` 各为 `Executors.newFixedThreadPool(5)`，发送慢不影响删除、删除慢不反压发送；
+2. **Redis 分布式锁保证幂等**：`deleteW3Todo` 中用 `redisTemplate.opsForValue().setIfAbsent(key, value, expireTime, MILLISECONDS)` 抢锁，key 为 `PRE_TALK_KEY + reviewAccount + taskId + todoType + "_delete_flag"`，TTL 取系统配置 `todo_time`（默认 10 分钟）；抢锁失败说明已有实例在处理，直接 `future.complete(null)` 幂等返回，不重复调下游；
+3. **CompletableFuture 编排**：对外返回 `CompletableFuture<Void>`，调用方可链式编排或忽略；
+4. **优雅停机**：`@PreDestroy destroy()` 中 `shutdown → awaitTermination(60s) → shutdownNow` 标准三段式，60 秒内未完成的才强制终止。
+
+### Result（结果）
+
+- 待办操作完全异步化，质检主流程 RT 不受 W3 接口影响；
+- 并发重复删除被锁拦截，下游无脏数据；
+- 发布重启时 60 秒窗口内任务正常收尾，无任务丢失。
