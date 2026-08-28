@@ -1,0 +1,263 @@
+/*
+ Navicat Premium Dump SQL
+
+ Source Server         : 工单质检
+ Source Server Type    : MySQL
+ Source Server Version : 50731 (5.7.31-5-log)
+ Source Host           : 7.190.33.219:3306
+ Source Schema         : db_qualitydev
+
+ Target Server Type    : MySQL
+ Target Server Version : 50731 (5.7.31-5-log)
+ File Encoding         : 65001
+
+ Date: 28/08/2026 14:35:54
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for t_ebg_customer_na_level
+-- ----------------------------
+DROP TABLE IF EXISTS `t_ebg_customer_na_level`;
+CREATE TABLE `t_ebg_customer_na_level`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `region` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '地区部',
+  `office` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '代表处',
+  `country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '国家/地区',
+  `customer_code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '客户编码',
+  `customer_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '客户名称',
+  `na_level` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'NA级别',
+  `create_user` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '创建人',
+  `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
+  `update_user` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '更新人',
+  `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1368 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of t_ebg_customer_na_level
+-- ----------------------------
+INSERT INTO `t_ebg_customer_na_level` VALUES (1148, '中国地区部', '北京政企业务部', '中国', '1000000035E', '北京市公安局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1149, '中国地区部', '行业总部客户作战部', '中国', '1000001904', '中国工商银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1150, '中国地区部', '广东深圳政企业务部', '中国', '1000005271', '比亚迪股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1151, '中国地区部', '北京政企业务部', '中国', '1000007837', '北京百度网讯科技有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1152, '中国地区部', '广东深圳政企业务部', '中国', '1000008225', '深圳市腾讯计算机系统有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1153, '中国地区部', '北京政企业务部', '中国', '1000008740', '北京京东世纪贸易有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1154, '中国地区部', '北京政企业务部', '中国', '1000009957', '中信数字科技集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1155, '中国地区部', '广东政企业务部', '中国', '1000016081', '唯品会（中国）有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1156, '中国地区部', '江苏政企业务部', '中国', '1000180144', '苏州市人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1157, '中国地区部', '行业总部客户作战部', '中国', '1000309904', '中国信息通信研究院', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1158, '中国地区部', '北京政企业务部', '中国', '1000321991', '北京达佳互联信息技术有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1159, '中国地区部', '广东政企业务部', '中国', '1000348676', '美的集团股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1160, '中国地区部', '山西政企业务部', '中国', '1000390509', '山西云时代技术有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1161, '中国地区部', '山西政企业务部', '中国', '1000402612', '国网山西省电力公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1162, '中国地区部', '安徽政企业务部', '中国', '1000451678', '大众汽车(安徽)有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1163, '中国地区部', '安徽政企业务部', '中国', '1000451774', '安徽江淮汽车集团股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1164, '中国地区部', '安徽政企业务部', '中国', '1000458770', '长鑫科技集团股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1165, '中国地区部', '广东深圳政企业务部', '中国', '1000491943', '深圳市福田区人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1166, '中国地区部', '广东深圳政企业务部', '中国', '1000521390', '鹏城实验室', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1167, '中国地区部', '辽宁政企业务部', '中国', '1000539678', '鞍钢集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1168, '中国地区部', '江西政企业务部', '中国', '1000552044', '江西铜业集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1169, '中国地区部', '贵州政企业务部', '中国', '1000560972', '贵州省大数据发展管理局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1170, '中国地区部', '吉林政企业务部', '中国', '1000567158', '吉林省政务服务和数字化建设管理局（吉林省营商环境建设办公室）', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1171, '中国地区部', '山东政企业务部', '中国', '1000571893', '山东省大数据局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1172, '中国地区部', '广东政企业务部', '中国', '1000601933', '东莞市政务服务数据管理局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1173, '中国地区部', '行业总部客户作战部', '中国', '1000617952', '国家能源投资集团有限责任公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1174, '中国地区部', '湖南政企业务部', '中国', '1000627965', '长沙市数据资源管理局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1175, '中国地区部', '广东政企业务部', '中国', '1000628463', '广州市政务服务数据管理局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1176, '中国地区部', '广东深圳政企业务部', '中国', '1000640599', '深圳市政务服务数据管理局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1177, '中国地区部', '上海政企业务部', '中国', '1000673623', '国网上海市电力公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1178, '中国地区部', '广东政企业务部', '中国', '1000713446', '广东省政务服务数据管理局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1179, '中国地区部', '北京政企业务部', '中国', '1002510564', '中国航空集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1180, '中国地区部', '行业总部客户作战部', '中国', '1002513955', '中央网络安全和信息化委员会办公室（国家互联网信息办公室）', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1181, '中国地区部', '贵州政企业务部', '中国', '1002515629', '中国贵州茅台酒厂(集团)有限责任公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1182, '中国地区部', '福建政企业务部', '中国', '1002518121', '福州市大数据发展管理委员会（福州市“数字福州”建设领导小组办公室）', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1183, '中国地区部', '行业总部客户作战部', '中国', '1002521072', '国家石油天然气管网集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1184, '中国地区部', '江苏政企业务部', '中国', '1002530969', '江苏省数据局（江苏省政务服务管理办公室）', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1185, '中国地区部', '江苏政企业务部', '中国', '1002535533', '南京市大数据管理局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1186, '中国地区部', '行业总部客户作战部', '中国', '1002573480', '中国南水北调集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1187, '中国地区部', '广东政企业务部', '中国', '1002596179', '中国南方航空集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1188, '中国地区部', '上海政企业务部', '中国', '1002676942', '浦江国家实验室', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1189, '中国地区部', '行业总部客户作战部', '中国', '1002707994', '中国中化控股有限责任公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1190, '中国地区部', '福建政企业务部', '中国', '1003222616', '福建省大数据集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1191, '中国地区部', '上海政企业务部', '中国', '1003388452', '上海商汤数字科技有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1192, '中国地区部', '四川政企业务部', '中国', '1003440381', '西藏高驰科技信息产业集团有限责任公司（政务一网通军团）', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1193, '中国地区部', '陕西政企业务部', '中国', '1003573772', '国网陕西省电力有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1194, '中国地区部', '贵州政企业务部', '中国', '1003653217', '贵州贵安发展集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1195, '中国地区部', '行业总部客户作战部', '中国', '1003664604', '国家数据局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1196, '中国地区部', '北京政企业务部', '中国', '1003700600', '抖音有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1197, '中国地区部', '上海政企业务部', '中国', '1003747074', '上海智能算力科技有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1198, '中国地区部', '广东深圳政企业务部', '中国', '1003760800', '深圳市光明科学城发展建设有限公司（政府）', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1199, '中国地区部', '北京政企业务部', '中国', '17249', '中国铁路北京局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1200, '中国地区部', '上海政企业务部', '中国', '19407', '国泰君安证券股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1201, '中国地区部', '行业总部客户作战部', '中国', '21475', '北京市信息技术应用研究所', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1202, '中国地区部', '行业总部客户作战部', '中国', '22361', '中华人民共和国公安部', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1203, '中国地区部', '行业总部客户作战部', '中国', '22661', '中央广播电视总台', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1204, '中国地区部', '广东深圳政企业务部', '中国', '23307', '中国平安保险(集团)股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1205, '中国地区部', '上海政企业务部', '中国', '23997', '上海市公安局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1206, '中国地区部', '黑龙江政企业务部', '中国', '24501', '中国铁路哈尔滨局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1207, '中国地区部', '江西政企业务部', '中国', '24781', '江西省财政厅', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1208, '中国地区部', '内蒙古政企业务部', '中国', '24877', '内蒙古电力(集团)有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1209, '中国地区部', '陕西政企业务部', '中国', '25237', '国网宁夏电力有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1210, '中国地区部', '山东政企业务部', '中国', '26012', '中国铁路济南局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1211, '中国地区部', '河北政企业务部', '中国', '26565', '国网河北省电力有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1212, '中国地区部', '行业总部客户作战部', '中国', '26681', '中国建设银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1213, '中国地区部', '青海政企业务部', '中国', '27051', '国网青海省电力公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1214, '中国地区部', '行业总部客户作战部', '中国', '30443', '中国气象局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1215, '中国地区部', '广东深圳政企业务部', '中国', '51219', '招商银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1216, '中国地区部', '河南政企业务部', '中国', '67172', '国网河南省电力公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1217, '中国地区部', '云南政企业务部', '中国', '68232', '云南省农村信用社联合社', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1218, '中国地区部', '江西政企业务部', '中国', '7040', '中国铁路南昌局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1219, '中国地区部', '行业总部客户作战部', '中国', 'ACC100000473', '中国人民银行总行', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1220, '中国地区部', '北京政企业务部', '中国', 'ACC100000963', '中国光大银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1221, '中国地区部', '江西政企业务部', '中国', 'ACC100001476', '国网江西省电力有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1222, '中国地区部', '上海政企业务部', '中国', 'ACC100001491', '交通银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1223, '中国地区部', '甘肃政企业务部', '中国', 'ACC100002363', '国网甘肃省电力公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1224, '中国地区部', '上海政企业务部', '中国', 'ACC100003206', '上海证券交易所（中国证券博物馆）', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1225, '中国地区部', '行业总部客户作战部', '中国', 'ACC100004175', '国家电网有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1226, '中国地区部', '新疆政企业务部', '中国', 'ACC100004468', '国网新疆电力有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1227, '中国地区部', '四川政企业务部', '中国', 'ACC100004498', '成都市公安局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1228, '中国地区部', '江苏政企业务部', '中国', 'ACC100004690', '国网江苏省电力有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1229, '中国地区部', '北京政企业务部', '中国', 'ACC100005064', '清华大学', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1230, '中国地区部', '江苏政企业务部', '中国', 'ACC100006694', '江苏省公安厅', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1231, '中国地区部', '辽宁政企业务部', '中国', 'ACC100007086', '中国铁路沈阳局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1232, '中国地区部', '安徽政企业务部', '中国', 'ACC100008398', '安徽省交通控股集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1233, '中国地区部', '广东政企业务部', '中国', 'ACC100010064', '广东省公安厅', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1234, '中国地区部', '吉林政企业务部', '中国', 'ACC100010100', '中国第一汽车集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1235, '中国地区部', '四川政企业务部', '中国', 'ACC100011472', '国网四川省电力公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1236, '中国地区部', '广东深圳政企业务部', '中国', 'ACC100013587', '深圳市公安局（深圳市海防与打击走私委员会办公室）', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1237, '中国地区部', '行业总部客户作战部', '中国', 'CIS100001532', '中国BQ装备集团公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1238, '中国地区部', '陕西政企业务部', '中国', 'CIS100002903', '陕西省西安市人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1239, '中国地区部', '北京政企业务部', '中国', 'CIS100003788', '国网北京市电力公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1240, '中国地区部', '上海政企业务部', '中国', 'CIS100004552', '中芯国际集成电路制造(上海)有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1241, '中国地区部', '广东政企业务部', '中国', 'CIS100004641', '广东电网有限责任公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1242, '中国地区部', '行业总部客户作战部', '中国', 'CIS100004682', '中国南方电网有限责任公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1243, '中国地区部', '四川政企业务部', '中国', 'CIS101277', '成都飞机工业(集团)有限责任公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1244, '中国地区部', '四川政企业务部', '中国', 'CIS101278', '中国工程物理研究院', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1245, '中国地区部', '行业总部客户作战部', '中国', 'CIS103108', '中华人民共和国海关总署', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1246, '中国地区部', '黑龙江政企业务部', '中国', 'CIS103496', '大庆油田有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1247, '中国地区部', '广东深圳政企业务部', '中国', 'CIS104637', '深圳市机场(集团)有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1248, '中国地区部', '行业总部客户作战部', '中国', 'CIS106403', '中华人民共和国财政部', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1249, '中国地区部', '行业总部客户作战部', '中国', 'CIS106684', '中国华能集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1250, '中国地区部', '广西政企业务部', '中国', 'CIS107013', '广西壮族自治区公安厅', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1251, '中国地区部', '行业总部客户作战部', '中国', 'CIS107265', '中国铝业集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1252, '中国地区部', '北京政企业务部', '中国', 'CIS107566', '中信银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1253, '中国地区部', '上海政企业务部', '中国', 'CIS108968', '中国铁路上海局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1254, '中国地区部', '北京政企业务部', '中国', 'CIS110375', '中国民生银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1255, '中国地区部', '行业总部客户作战部', '中国', 'CIS111442', '国家统计局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1256, '中国地区部', '行业总部客户作战部', '中国', 'CIS111536', '中华人民共和国自然资源部', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1257, '中国地区部', '行业总部客户作战部', '中国', 'CIS111652', '中国民航信息网络股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1258, '中国地区部', '天津政企业务部', '中国', 'CIS111702', '渤海银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1259, '中国地区部', '江苏政企业务部', '中国', 'CIS111730', '无锡市人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1260, '中国地区部', '行业总部客户作战部', '中国', 'CIS111745', '中华人民共和国教育部', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1261, '中国地区部', '行业总部客户作战部', '中国', 'CIS111746', '国家烟草专卖局', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1262, '中国地区部', '行业总部客户作战部', '中国', 'CIS111766', '中华人民共和国最高人民检察院', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1263, '中国地区部', '行业总部客户作战部', '中国', 'CIS111809', '中国银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1264, '中国地区部', '重庆政企业务部', '中国', 'CIS112212', '重庆长安汽车股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1265, '中国地区部', '行业总部客户作战部', '中国', 'CIS112584', '中国铁建股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1266, '中国地区部', '广西政企业务部', '中国', 'CIS112656', '广西电网有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1267, '中国地区部', '山西政企业务部', '中国', 'CIS112854', '中国铁路太原局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1268, '中国地区部', '福建政企业务部', '中国', 'CIS113295', '兴业银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1269, '中国地区部', '浙江政企业务部', '中国', 'CIS113421', '国网浙江省电力有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1270, '中国地区部', '行业总部客户作战部', '中国', 'CIS114254', '中国大唐集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1271, '中国地区部', '行业总部客户作战部', '中国', 'CIS114255', '中国华电集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1272, '中国地区部', '上海政企业务部', '中国', 'CIS114540', '中国东方航空股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1273, '中国地区部', '安徽政企业务部', '中国', 'CIS116458', '科大讯飞股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1274, '中国地区部', '福建政企业务部', '中国', 'CIS117178', '国网福建省电力有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1275, '中国地区部', '行业总部客户作战部', '中国', 'CIS117267', '中华人民共和国最高人民法院', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1276, '中国地区部', '广东深圳政企业务部', '中国', 'CIS117312', '深圳供电局有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1277, '中国地区部', '陕西政企业务部', '中国', 'CIS117415', '陕西省农村信用社联合社', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1278, '中国地区部', '山东政企业务部', '中国', 'CIS117524', '国网山东省电力公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1279, '中国地区部', '行业总部客户作战部', '中国', 'CIS117768', '国家税务总局', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1280, '中国地区部', '浙江政企业务部', '中国', 'CIS118007', '阿里巴巴（中国）有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1281, '中国地区部', '行业总部客户作战部', '中国', 'CIS118490', '中国证券登记结算有限责任公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1282, '中国地区部', '湖南政企业务部', '中国', 'CIS118804', '长沙银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1283, '中国地区部', '广东政企业务部', '中国', 'CIS118903', '中国铁路广州局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1284, '中国地区部', '江苏政企业务部', '中国', 'CIS118981', '华泰证券股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1285, '中国地区部', '湖北政企业务部', '中国', 'CIS119021', '中国长江三峡集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1286, '中国地区部', '四川政企业务部', '中国', 'CIS120823', '四川农村商业联合银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1287, '中国地区部', '陕西政企业务部', '中国', 'CIS121150', '西部机场集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1288, '中国地区部', '上海政企业务部', '中国', 'CIS121878', '上海申通地铁集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1289, '中国地区部', '云南政企业务部', '中国', 'CIS122152', '云南中烟工业有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1290, '中国地区部', '新疆政企业务部', '中国', 'CIS122200', '新疆维吾尔自治区农村信用社联合社', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1291, '中国地区部', '安徽政企业务部', '中国', 'CIS122650', '合肥市公安局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1292, '中国地区部', '山东政企业务部', '中国', 'CIS122795', '山东能源集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1293, '中国地区部', '浙江政企业务部', '中国', 'CIS123151', '宁波银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1294, '中国地区部', '广东深圳政企业务部', '中国', 'CIS123849', '深圳市地铁集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1295, '中国地区部', '上海政企业务部', '中国', 'CIS124000', '中国太平洋保险(集团)股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1296, '中国地区部', '云南政企业务部', '中国', 'CIS124004', '云南省交通投资建设集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1297, '中国地区部', '广东政企业务部', '中国', 'CIS124270', '广发银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1298, '中国地区部', '广东政企业务部', '中国', 'CIS124406', '珠海市公安局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1299, '中国地区部', '北京政企业务部', '中国', 'CIS126334', '中央国债登记结算有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1300, '中国地区部', '辽宁政企业务部', '中国', 'CIS126378', '沈阳飞机工业（集团）有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1301, '中国地区部', '北京政企业务部', '中国', 'CIS126871', '北京三快科技有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1302, '中国地区部', '行业总部客户作战部', '中国', 'CIS126957', '中国邮政储蓄银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1303, '中国地区部', '广东深圳政企业务部', '中国', 'CIS127492', '深圳证券交易所', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1304, '中国地区部', '广东深圳政企业务部', '中国', 'CIS130627', '深圳国家高技术产业创新中心', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1305, '中国地区部', '行业总部客户作战部', '中国', 'CIS130658', '中粮集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1306, '中国地区部', '上海政企业务部', '中国', 'CIS131438', '中国银联股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1307, '中国地区部', '山东政企业务部', '中国', 'CIS131714', '山东省公安厅', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1308, '中国地区部', '陕西政企业务部', '中国', 'CIS132428', '陕西省财政厅', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1309, '中国地区部', '河南政企业务部', '中国', 'CIS133190', '河南省农村信用社联合社', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1310, '中国地区部', '广东政企业务部', '中国', 'CIS133339', '广州汽车集团股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1311, '中国地区部', '广东政企业务部', '中国', 'CIS133567', '广发证券股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1312, '中国地区部', '北京政企业务部', '中国', 'CIS133637', '华夏银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1313, '中国地区部', '浙江政企业务部', '中国', 'CIS135143', '浙江吉利控股集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1314, '中国地区部', '河南政企业务部', '中国', 'CIS135665', '中原银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1315, '中国地区部', '行业总部客户作战部', '中国', 'CIS135754', '中国石油化工集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1316, '中国地区部', '上海政企业务部', '中国', 'CIS136056', '海通证券股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1317, '中国地区部', '行业总部客户作战部', '中国', 'CIS136094', '中国石油天然气集团有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1318, '中国地区部', '北京政企业务部', '中国', 'CIS136439', '中国农业发展银行', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1319, '中国地区部', '行业总部客户作战部', '中国', 'CIS136494', '中华人民共和国应急管理部', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1320, '中国地区部', '行业总部客户作战部', '中国', 'CIS136541', '中国医学科学院北京协和医院', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1321, '中国地区部', '江苏政企业务部', '中国', 'CIS136543', '江苏银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1322, '中国地区部', '行业总部客户作战部', '中国', 'CIS136554', '中国航空工业集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1323, '中国地区部', '行业总部客户作战部', '中国', 'CIS136628', '中国农业银行股份有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1324, '中国地区部', '浙江政企业务部', '中国', 'CIS136644', '浙商银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1325, '中国地区部', '北京政企业务部', '中国', 'CIS136696', '中国科学院', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1326, '中国地区部', '行业总部客户作战部', '中国', 'CIS136707', '中华人民共和国国家卫生健康委员会', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1327, '中国地区部', '江苏政企业务部', '中国', 'CIS136709', '江苏省农村信用社联合社', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1328, '中国地区部', '行业总部客户作战部', '中国', 'CIS136727', '中国核工业集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1329, '中国地区部', '江苏政企业务部', '中国', 'CIS136735', '江苏江南农村商业银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1330, '中国地区部', '江西政企业务部', '中国', 'CIS136935', '江西省人民政府办公厅', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1331, '中国地区部', '湖北政企业务部', '中国', 'CIS136978', '湖北省农村信用社联合社', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1332, '中国地区部', '行业总部客户作战部', '中国', 'CIS137018', '中国人寿保险(集团)公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1333, '中国地区部', '山东政企业务部', '中国', 'CIS137082', '山东省城市商业银行合作联盟有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1334, '中国地区部', '安徽政企业务部', '中国', 'CIS137175', '徽商银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1335, '中国地区部', '天津政企业务部', '中国', 'CIS137181', '天津港（集团）有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1336, '中国地区部', '上海政企业务部', '中国', 'CIS137232', '中国太平保险集团有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1337, '中国地区部', '江西政企业务部', '中国', 'CIS137252', '江西省交通投资集团有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1338, '中国地区部', '行业总部客户作战部', '中国', 'CIS137316', '中国人民保险集团股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1339, '中国地区部', '安徽政企业务部', '中国', 'CIS137539', '安徽海螺集团有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1340, '中国地区部', '福建政企业务部', '中国', 'CIS137653', '厦门国贸控股集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1341, '中国地区部', '福建政企业务部', '中国', 'CIS137799', '厦门市公安局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1342, '中国地区部', '广西政企业务部', '中国', 'CIS137896', '广西农村商业联合银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1343, '中国地区部', '河北政企业务部', '中国', 'CIS137911', '廊坊市人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1344, '中国地区部', '江苏政企业务部', '中国', 'CIS137951', '苏州市公安局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1345, '中国地区部', '湖北政企业务部', '中国', 'CIS137962', '中国铁路武汉局集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1346, '中国地区部', '湖北政企业务部', '中国', 'CIS137970', '武汉地铁集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1347, '中国地区部', '云南政企业务部', '中国', 'CIS137975', '云南电网有限责任公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1348, '中国地区部', '行业总部客户作战部', '中国', 'CIS138063', '国家能源集团煤运部', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1349, '中国地区部', '广东政企业务部', '中国', 'CIS138251', '广东省农村信用社联合社', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1350, '中国地区部', '上海政企业务部', '中国', 'CIS138289', '上海浦东发展银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1351, '中国地区部', '上海政企业务部', '中国', 'CIS138301', '上海银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1352, '中国地区部', '湖北政企业务部', '中国', 'CIS138445', '东风汽车集团有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1353, '中国地区部', '行业总部客户作战部', '中国', 'CIS138446', '中国中煤能源集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1354, '中国地区部', '广东深圳政企业务部', '中国', 'CIS139204', '深圳市龙岗区人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1355, '中国地区部', '浙江政企业务部', '中国', 'CIS139974', '浙江农村商业联合银行股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1356, '中国地区部', '行业总部客户作战部', '中国', 'CIS142095', '国家广播电视总局', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1357, '中国地区部', '上海政企业务部', '中国', 'CIS142351', '中国远洋海运集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1358, '中国地区部', '行业总部客户作战部', '中国', 'CIS144417', '中国国家铁路集团有限公司', '卓越NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1359, '中国地区部', '黑龙江政企业务部', '中国', 'CIS161965', '哈尔滨市人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1360, '中国地区部', '广东深圳政企业务部', '中国', 'CIS164575', '深圳前海微众银行股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1361, '中国地区部', '江苏政企业务部', '中国', 'CIS173222', '盐城市人民政府', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1362, '中国地区部', '浙江政企业务部', '中国', 'CIS173366', '蚂蚁科技集团股份有限公司', '战略NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1363, '中国地区部', '上海政企业务部', '中国', 'CIS186251', '幻电科技（上海）有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1364, '中国地区部', '福建政企业务部', '中国', 'CIS188533', '厦门翔业集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1365, '中国地区部', '浙江政企业务部', '中国', 'CIS191764', '浙江省海港投资运营集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1366, '中国地区部', '北京政企业务部', '中国', 'CIS195861', '首都机场集团有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+INSERT INTO `t_ebg_customer_na_level` VALUES (1367, '中国地区部', '山东政企业务部', '中国', 'HS111503', '万华化学集团股份有限公司', '核心NA', 'maofukang 30054600', '2026-08-27 09:45:31', 'maofukang 30054600', '2026-08-27 09:45:31');
+
+SET FOREIGN_KEY_CHECKS = 1;
