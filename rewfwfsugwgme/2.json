@@ -1,0 +1,110 @@
+{
+  "x": 160,
+  "y": 30,
+  "width": 794,
+  "height": 1123,
+  "deltaSetLike": {
+    "ROOT": {
+      "x": -999999,
+      "y": -999999,
+      "z": 0,
+      "id": "ROOT",
+      "key": "entry",
+      "width": 0,
+      "height": 0,
+      "attrs": {},
+      "children": [
+        "jdTwQVDc4q",
+        "JwCcMkwEDG",
+        "H1gANma7nu",
+        "JqMyHKwdtL",
+        "RIOwTMeh3F",
+        "AsPTY5JiGQ"
+      ]
+    },
+    "jdTwQVDc4q": {
+      "x": 525.4999999999999,
+      "y": 34,
+      "z": 0,
+      "id": "jdTwQVDc4q",
+      "key": "text",
+      "width": 72,
+      "height": 37,
+      "attrs": {
+        "DATA": "[{\"chars\":[{\"char\":\"刘江山\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"21\"}}],\"config\":{}},{\"chars\":[],\"config\":{}}]",
+        "ORIGIN_DATA": "[{\"children\":[{\"text\":\"吕博政\",\"font-base\":{\"fontSize\":18},\"bold\":true}]},{\"children\":[{\"text\":\"\"}]}]"
+      },
+      "children": []
+    },
+    "JwCcMkwEDG": {
+      "x": 336.9999999999999,
+      "y": 71,
+      "z": 0,
+      "id": "JwCcMkwEDG",
+      "key": "text",
+      "width": 449,
+      "height": 30,
+      "attrs": {
+        "DATA": "[{\"chars\":[{\"char\":\"性别：男丨联系方式：13220792385 | 邮箱：3448241291@qq.com\",\"config\":{}}],\"config\":{}}]",
+        "ORIGIN_DATA": "[{\"children\":[{\"text\":\"13015002000 丨1404305637@qq.com\"}]}]"
+      },
+      "children": []
+    },
+    "H1gANma7nu": {
+      "x": 177.9999999999999,
+      "y": 945.5,
+      "z": 0,
+      "id": "H1gANma7nu",
+      "key": "text",
+      "width": 758,
+      "height": 266,
+      "attrs": {
+        "DATA": "[{\"chars\":[{\"char\":\"专业技能\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":18}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[],\"config\":{\"DIVIDING_LINE\":\"true\"}},{\"chars\":[{\"char\":\"熟练掌握 Java 基础，理解并能使用常见的集合及底层数据结构、反射机制、类加载、多线程等\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"熟悉 MySQL 关系型数据库，深入理解事务原理、存储引擎、索引、锁机制、MVCC 等\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"熟悉 Redis 的数据结构及应用场景，了解分布式锁、消息队列、I/O 模型、内存管理机制\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"熟练掌握 JVM 内存结构、JMM、GC 算法、双亲委派机制，熟悉常见垃圾回收器 CMS、G1 的工作原理\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"熟悉 JUC 并发编程，熟练掌握Java中各种锁机制、CAS、AQS、线程池、ThreadLocal等实现原理\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"熟悉使用消息中间件 RocketMQ，深刻理解消息队列模型、消息可靠原理、高效读写特性、死信队列等\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"熟练使用 Git 进行版本控制，掌握 Maven 项目构建与依赖管理，熟悉 Linux 操作系统，掌握常用命令及基本操作\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[],\"config\":{}}]",
+        "ORIGIN_DATA": "[{\"children\":[{\"text\":\"专业技能\",\"bold\":true,\"font-base\":{\"fontSize\":18}}]},{\"dividing-line\":true,\"children\":[{\"text\":\"\"}]},{\"children\":[{\"text\":\"1. 熟悉 Html, Css, JavaScript 语法,并能将 ES6 语法应用于开发中\"}]},{\"children\":[{\"text\":\"2. 熟悉 Vue 技术栈, 能熟悉运用 Vue2 和 Vue3 进行开发\"}]},{\"children\":[{\"text\":\"3. 熟悉 React + React-redux 技术栈，能快速上手 React-hooks 的开发 \"}]},{\"children\":[{\"text\":\"4. 熟悉 Git 版本管理工具，了解 Commitlint 等约定式提交规范\"}]},{\"children\":[{\"text\":\"5. 了解 TypeScript，如泛型，类等，能运用于实际开发当中\"}]},{\"children\":[{\"text\":\"6. 了解 计算机网络， 浏览器原理等相关知识\"}]}]"
+      },
+      "children": []
+    },
+    "JqMyHKwdtL": {
+      "x": 177.9999999999999,
+      "y": 152,
+      "z": 0,
+      "id": "JqMyHKwdtL",
+      "key": "text",
+      "width": 767,
+      "height": 467,
+      "attrs": {
+        "DATA": "[{\"chars\":[{\"char\":\"工作经历 \",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":18}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[],\"config\":{\"LINE_HEIGHT\":\"1.7\",\"DIVIDING_LINE\":\"true\"}},{\"chars\":[{\"char\":\"深圳易宝软件有限公司\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"17\"}},{\"char\":\"-Java研发实习生\",\"config\":{\"SIZE\":\"16\"}},{\"char\":\"                                                            \",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"17\"}},{\"char\":\"2026年06月 - 2026年09月\",\"config\":{}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"参与项目：\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"16\"}},{\"char\":\"Netcare工单质检工具\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"：对 SR问题单、RO网络操作单等工单做事中/事后质量合规检查的平台，用规则引擎 + AI 辅助自动核查工单，通过作业功能实现质检经验IT化，灵活编排规则，检查模板自由组合，全量问题单质检自动化。\",\"config\":{}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"主要工作：\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"16\"}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"开发质量中心-政企质检字段线下表管理页面，覆盖四张政企质检字段分类表，用于问题单分类，提供\\\"分页查询 → 条件导出 → 模板下载 → Excel批量导入\\\"的完整数据管理闭环。独立负责 16 个 REST 接口的全链路开发（Controller → Service → DAO）\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\"}},{\"chars\":[{\"char\":\"Redis 固定窗口限流：按用户 + 操作类型维度计数，60 秒窗口，阈值从全局配置下发、代码钳制上限 10 次，窗口到期 key过期自动清零。导出、导入、模板下载各算独立的一类操作\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\"}},{\"chars\":[{\"char\":\"基于 EasyExcel 监听器实现流式批量导入：逐行解析、500 行/批批量落库，导入上限经配置中心动态下发并熔断，采用\\\"首批清表 + 后续批次追加\\\"策略，失败行单独收集并以Excel 文件回传前端\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\"}},{\"chars\":[{\"char\":\"参与项目：\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"16\"}},{\"char\":\"中国区 PMO 政企运营大屏\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"：通过V8大屏看板，展示交付保障、交付评审、客满调查、现场作业等模块将代表处分散作业收编至DOC集中运营\",\"config\":{}}],\"config\":{}},{\"chars\":[{\"char\":\"主要工作：\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"16\"}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"设计并实现湖表到中间层的全链路数据服务：编写存储过程将两张湖表（约 4.5W/0.5W 行）筛选、关联、加工后落地 2 张明细表，大屏接口基于预清洗明细表查询，保障大屏数据实时性与响应速度\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"实现客户声音超期监控逻辑：处理时长阈值接入配置表并设置默认值兜底，对未二次回访工单按当前时间计算，避免空值漏判；清洗操作人工号前缀，复用通用存储过程完成代表处名称到编码的标准化\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[],\"config\":{\"LINE_HEIGHT\":\"1.7\"}}]",
+        "ORIGIN_DATA": "[{\"children\":[{\"text\":\"工作经历 \",\"font-base\":{\"fontSize\":18},\"bold\":true}]},{\"dividing-line\":true,\"children\":[{\"text\":\"\"}]},{\"children\":[{\"text\":\"网易(杭州)网络有限公司                                                                                                                                    2022年05月 - 至今\",\"bold\":true}]},{\"children\":[{\"text\":\"实习期间主要负责永劫无间、逆水寒、天谕等游戏官网的迭代以及专题页面的开发，在职期间跟随团队 学习了toC性能优化方案、toC用户交互方案、多端页面开发流程、前端适老化方案等\"}]},{\"children\":[{\"text\":\"1、能独自进行项目的整体构建，包括项目的搭建，UI设计稿的还原，产品需求的沟通与实现，后端接口 联调、本地测试与QA测试、直至项目上线的全过程\"}]},{\"children\":[{\"text\":\"2、采用web动画，多次实现逐帧动画，路由跳转动画，页面交互动画，轮播过渡动画等交互动画 \"}]},{\"children\":[{\"text\":\"3、采用约定式git进行规范化代码提交，使用包括commitlint、husky、lint stages、Eslint等规范 \"}]},{\"children\":[{\"text\":\"4、采用组件化思维开发代码，在职期间维护并修改过部门h5小型组件库中的头部组件 \"}]},{\"children\":[{\"text\":\"5、采用toC性能优化方案完成实习期间项目，如雪碧图，防抖节流，WebPageTest页面性能测试，动 画优化，图片优化，懒加载等 \"}]},{\"children\":[{\"text\":\"6、学习了pc端/移动端项目的开发规范及开发思路，能快速上手多端项目开发 \"}]},{\"children\":[{\"text\":\"7、学习了webpack构建工具的配置，包括postcss、loader、本地测试发布环境的配置 \"}]},{\"children\":[{\"text\":\"实习独立完成项目线上地址:\",\"bold\":true}]},{\"children\":[{\"text\":\"天谕许愿页h5:\"},{\"text\":\"https://tym.163.com/2022/xupfj/m/#/\",\"link\":{\"href\":\"https://tym.163.com/2022/xupfj/m/#/\",\"blank\":true}}]},{\"children\":[{\"text\":\"逆水寒清明古祭礼活动:\"},{\"text\":\"https://n.163.com/2019/qingming/#/ \",\"link\":{\"href\":\"https://n.163.com/2019/qingming/#/ \",\"blank\":true}}]},{\"children\":[{\"text\":\"永劫无间世界观:\"},{\"text\":\"https://www.yjwujian.cn/world/#/heroDetail/5\",\"link\":{\"href\":\"https://www.yjwujian.cn/world/#/heroDetail/5\",\"blank\":true}}]}]"
+      },
+      "children": []
+    },
+    "RIOwTMeh3F": {
+      "x": 177.9999999999999,
+      "y": 94,
+      "z": 0,
+      "id": "RIOwTMeh3F",
+      "key": "text",
+      "width": 765.0000000000001,
+      "height": 80,
+      "attrs": {
+        "DATA": "[{\"chars\":[{\"char\":\"教育经历\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":18}}],\"config\":{}},{\"chars\":[],\"config\":{\"DIVIDING_LINE\":\"true\"}},{\"chars\":[{\"char\":\"东华理工大学    本科   网络工程专业                                                                                         2023年09月 - 2027年07月                                                  \",\"config\":{}}],\"config\":{}}]",
+        "ORIGIN_DATA": "[{\"children\":[{\"text\":\"教育经历\",\"font-base\":{\"fontSize\":18},\"bold\":true}]},{\"dividing-line\":true,\"children\":[{\"text\":\"\"}]},{\"children\":[{\"text\":\"福州大学                                                                                                                                    2019年09月 - 2023年07月\"}]},{\"children\":[{\"text\":\"机械设计制造及其自动化 本科                                                                                                                                       福州\"}]},{\"children\":[{\"text\":\"GPA:3.3/4.0(专业前15%)\"}]}]"
+      },
+      "children": []
+    },
+    "AsPTY5JiGQ": {
+      "x": 177.9999999999999,
+      "y": 609,
+      "z": 0,
+      "id": "AsPTY5JiGQ",
+      "key": "text",
+      "width": 764,
+      "height": 441,
+      "attrs": {
+        "DATA": "[{\"chars\":[{\"char\":\"项目经历 \",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":19}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[],\"config\":{\"LINE_HEIGHT\":\"1.7\",\"DIVIDING_LINE\":\"true\"}},{\"chars\":[{\"char\":\"AI-RAG 智能检索回答系统\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"17\"}}],\"config\":{\"LINE_HEIGHT\":\"1.6\"}},{\"chars\":[{\"char\":\"1.项目描述\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"15\"}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"AI-RAG 智能检索回答系统围绕智能文档检索与问答场景，提供多路检索引擎、意图识别、问题重写、会话记忆、MCP 工具调用等核心能力。系统采用多模型路由与熔断降级机制，支持高并发场景下的稳定服务。\",\"config\":{}}],\"config\":{\"LINE_HEIGHT\":\"1.6\"}},{\"chars\":[{\"char\":\"2. 核心技术：\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"15\"}},{\"char\":\"SpringBoot、Redis、Redission、RocketMQ、PostgreSQL\",\"config\":{}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"3. 工作职责\",\"config\":{\"WEIGHT\":\"bold\",\"SIZE\":\"15\"}}],\"config\":{\"LINE_HEIGHT\":\"1.7\"}},{\"chars\":[{\"char\":\"多模型候选\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"：\",\"config\":{}},{\"char\":\"三态熔断器\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"配合\",\"config\":{}},{\"char\":\"优先级降级链\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"和\",\"config\":{}},{\"char\":\"同步调用故障转移\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"，模型连续失败达到阈值自动熔断并切换至候选模型，保障用户端无感知以及多模型场景下的高可用性。\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.6\"}},{\"chars\":[{\"char\":\"会话记忆管理\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"：采用「最近 N 轮原始对话 + LLM 自动摘要」的混合存储策略，将长对话上下文压缩后持久化至 PostgreSQL；通过滑动窗口与摘要压缩策略，在保证关键信息不丢失的前提下，将 Token 消耗降低 \",\"config\":{}},{\"char\":\"60%-80%\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"，有效解决长对话场景下的上下文溢出问题。\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.6\"}},{\"chars\":[{\"char\":\"多路检索引擎\",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"：实现意图定向与全局向量的双路召回策略，采用 \",\"config\":{}},{\"char\":\"CompletableFuture \",\"config\":{\"WEIGHT\":\"bold\"}},{\"char\":\"并行执行检索通道，配合去重、重排序等后处理流水线，在保证召回率的同时提升检索精准度，解决单一检索方式覆盖率不足的问题。\",\"config\":{}}],\"config\":{\"UNORDERED_LIST_LEVEL\":\"1\",\"LINE_HEIGHT\":\"1.6\"}},{\"chars\":[],\"config\":{}},{\"chars\":[],\"config\":{\"LINE_HEIGHT\":\"1.6\"}},{\"chars\":[],\"config\":{\"LINE_HEIGHT\":\"1.6\"}}]",
+        "ORIGIN_DATA": "[{\"children\":[{\"text\":\"项目经历 \",\"font-base\":{\"fontSize\":19},\"bold\":true}]},{\"dividing-line\":true,\"children\":[{\"text\":\"\"}]},{\"children\":[{\"text\":\"字节跳动社区服务项目\",\"bold\":true},{\"text\":\"                                                                                                                 \"},{\"text\":\"2021年11月 - 2022年01月\",\"bold\":true}]},{\"children\":[{\"text\":\"此项目是本人参与字节跳动的一个社区项目,主要是为了实现一个B端与C端双端共存的系 统，本人主要负责整个b端后台以及c端的部分性能优化\"}]},{\"unordered-list\":true,\"children\":[{\"children\":[{\"text\":\"基于角色的访问控制 RBAC + vue-router 实现后台权限管理 \"}],\"unordered-list-item\":{\"level\":1}},{\"unordered-list-item\":{\"level\":1},\"children\":[{\"text\":\"基于路由拦截 + 本地存储 + token的方式实现前台与后台的登录功能 \"}]},{\"unordered-list-item\":{\"level\":1},\"children\":[{\"text\":\"基于 vue-i18n V9 实现后台的国际化解决方案\"}]},{\"unordered-list-item\":{\"level\":1},\"children\":[{\"text\":\"基于 rem + vw/vh 实现前台移动端适配方案\"}]}]},{\"unordered-list\":true,\"children\":[{\"children\":[{\"text\":\"其余业务点及使用到的工具: 富文本编辑、文章搜索功能、betterScroll丝滑滚动、长列表渲染大 量数据、下拉刷新、动态换肤、导航指引等\"}],\"unordered-list-item\":{\"level\":1}}]},{\"children\":[{\"text\":\"多功能音乐播放器                                                                                                                                   2021年11月 - 2022年03月 \",\"bold\":true}]},{\"children\":[{\"text\":\"本项目主要是实现一个功能较为齐全的移动端音乐播放器\"}]},{\"unordered-list\":true,\"children\":[{\"children\":[{\"text\":\"基于axios进行二次封装，实现环境配置，延时操作，请求响应拦截，状态判断等功能 \"}],\"unordered-list-item\":{\"level\":1}},{\"unordered-list-item\":{\"level\":1},\"children\":[{\"text\":\"基于css3的keyframes实现逐帧转场动画， 磁盘转动动画，淡入淡出动画，轮播切换动画等\"}]},{\"unordered-list-item\":{\"level\":1},\"children\":[{\"text\":\"除了业务方面之外，本项目还进行了性能优化,遵照Rail性能指标,通过webPageTest性能测试,首 屏渲染时间从3s降低至0.9s,。主要进行了长列表渲染优化，图片懒加载，路由懒加载，cdn优化，vant按需引入，骨架屏，防抖节流，函数式组件等\"}]}]}]"
+      },
+      "children": []
+    }
+  }
+}
